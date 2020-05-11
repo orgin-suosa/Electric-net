@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>太平网通</title>
+    <link rel="stylesheet" href="./static/fonts/iconfont.css">
+    <link rel="icon" href="http://ui.cntaiping.com/tplresource/cms/www/taiping/img/favicon.ico" type="image/x-icon">
+    <script src="./static/js/jquery-1.9.1.min.js"></script>
+    <script src="./static/js/jquery.base64.js"></script>
+    <script src="./static/js/time.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+      // console.log('$', $.base64)
+    // 获取员工信息
+  var param ="dsdsdsdsk想看电视看";
+
+  // 加密：
+  var secret = $.base64.encode(escape(param));
+
+  // 解密：
+  var answer = unescape($.base64.decode(secret));
+// console.log(secret, answer)      
+  </script>
+</html>
